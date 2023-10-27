@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Target(ElementType.FIELD)
 @Constraint(validatedBy = PhoneConstraintValidator.class)
 public @interface PhoneConstraint {
-    String message() default "Time should be between 6 AM and 1 PM ";
+    String message() default "phone number is not correct ";
 
     Class<?>[] groups() default {};
 
